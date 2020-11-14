@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+	{% extends "analyst.html" %}
+	{% block content %}
+	<h1>Biểu đồ đường</h1>
+	<p>Mô tả:là một loại biểu đồ mà hiển thị thông tin như là một loạt các điểm dữ liệu được gọi là 'markers' nối với nhau bằng các đoạn đường thẳng. </p>
+	<p>Dùng khi :
+		
+		Theo dõi các thay đổi theo thời gian
+		trục x hiển thị các biến liên tục
+		Trục Y hiển thị phép đo</p>
+	   <div class="scatter">
+		{{ chart|safe }}
+	   </div>
+	{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,91 @@
+{% extends "simplechart.html" %}
+
+{% block content %}
+
+{% if labels|length > 0 %}
+    <h4 class="text-center"></h4>
+    <br/>
+{% endif %}
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>Tên biến số </td>
+            <td>Kiểu dữ liệu </td>
+            <td>Ý nghĩa của biến số </td>
+            <td>Dạng dữ liệu </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>month</td>
+            <td>String</td>
+            <td>tháng trong năm </td>
+            <td>Định tính</td>
+        </tr>
+        <tr>
+            <td>day</td>
+            <td>string</td>
+            <td>ngày trong tuần</td>
+            <td>Định tính</td>
+        </tr><tr>
+            <td>FFMC</td>
+            <td>float</td>
+            <td>Chỉ số FFMC </td>
+            <td>Định lượng</td>
+        </tr>
+        <tr>
+            <td>DMC</td>
+            <td>float</td>
+            <td>Chỉ số DMC </td>
+            <td>Định lượng</td>
+        </tr>
+        <tr>
+            <td>DC</td>
+            <td>float</td>
+            <td>Chỉ số DC </td>
+            <td>Định lượng</td>
+        </tr><tr>
+            <td>ISI</td>
+            <td>float</td>
+            <td>Chỉ số ISI</td>
+            <td>Định lượng</td>
+           
+        </tr><tr>
+            <td>temp</td>
+            <td>float</td>
+            <td>nhiệt độ môi trường</td>
+            <td>Định lượng</td>
+           
+        </tr>
+        <tr>
+            <td>RH</td>
+            <td>float</td>
+            <td>Độ ẩm môi trường</td>
+            <td>Định lượng</td>
+           
+        </tr>
+        <tr>
+            <td>wind</td>
+            <td>float</td>
+            <td>tốc độ gió</td>
+            <td>Định lượng</td>
+           
+        </tr>
+        <tr>
+            <td>rain</td>
+            <td>float</td>
+            <td>lượng mưa</td>
+            <td>Định lượng</td>
+           
+        </tr>
+        <tr>
+            <td>area</td>
+            <td>float</td>
+            <td>diện tích rừng bị cháy</td>
+            <td>Định lượng</td>
+           
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}

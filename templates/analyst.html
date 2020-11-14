@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>simple chart</title>
+<link href="../static/css/simplechart.css" rel="stylesheet" />
+<link href="../static/css/bootstrap.css" rel="stylesheet" />
+<script src="../static/js/jquery-2.1.4.js"></script>
+<script src="../static/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+	
+      	<div class="wrapper">
+		<div class="left">
+		<ul>
+			<li><a href="">MATPLOTLIB</a></li>
+			<li><a href="{{ url_for('linechartdemo') }}">LINE CHART</a></li>
+			<li><a href="{{ url_for('barchartdemo') }}">BAR CHART</a></li>
+			<li><a href="{{ url_for('piechartdemo') }}">PIE CHART</a></li>
+			<li><a href="{{ url_for('scatterchartdemo') }}">SCATTER CHART</a></li>
+			<li><a href="{{ url_for('histdemo') }}">HISTOGRAM</a></li>
+			
+			
+			
+		</ul>
+		</div>
+		<div class="right">
+			<div class="top">
+			<h1>SIMPLE CHART</h1>
+			<li><a href="{{ url_for('index') }}">HOME PAGE</a></li>
+			</div>
+			<p>CÁC DẠNG BIỂU ĐỒ MÔ TẢ
+
+				<div class="tam">
+					{% block content %}
+					{% endblock %}
+				  </div>	
+			</p>
+		</div>
+		</div>
+    
+
+</body>
+</html>

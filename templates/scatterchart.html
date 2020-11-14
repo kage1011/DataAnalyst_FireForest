@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+	{% extends "analyst.html" %}
+	{% block content %}
+	<h1>Biểu đồ Scatter</h1>
+	<p>Mô tả:là một loại sơ đồ toán học sử dụng tọa độ Descartes để hiển thị giá trị cho hai biến thông thường cho một tập dữ liệu </p>
+	<p>Dùng khi :
+		
+		Biểu đồ phân tán được sử dụng khi bạn muốn hiển thị mối quan hệ giữa hai biến . Biểu đồ phân tán đôi khi được gọi là biểu đồ tương quan vì chúng cho thấy hai biến có tương quan như thế nào
+       </p>
+	   <div class="scatter">
+		{{ chart|safe }}
+	   </div>
+	{% endblock %}
+  </body>
+</html>

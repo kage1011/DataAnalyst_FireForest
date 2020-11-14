@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+	{% extends "analyst.html" %}
+    
+	{% block content %}
+	<h1>Biểu đồ cột</h1>
+	<p>
+		Mô tả :
+	    là một biểu đồ hoặc đồ thị quà dữ liệu phân loại bằng các thanh hình chữ nhật với chiều cao hoặc chiều dài tỉ lệ với các giá trị mà cột đại diện.có thể được vẽ theo chiều dọc hoặc chiều ngang.
+	</p>
+	<p>
+		Dùng khi:
+		So sánh dữ liệu phân loại .
+		So sánh giữa các danh mục rời rạc .
+		Một trục của biểu đồ hiển thị các danh mục cụ thể đang được so sánh và trục còn lại thể hiện giá trị đo được.</p>
+	   <div class="scatter">
+		{{ chart|safe }}
+	   </div>
+	{% endblock %}
+  </body>
+</html>

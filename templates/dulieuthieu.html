@@ -1,0 +1,11 @@
+{% extends "simplechart.html" %}
+
+{% block content %}
+
+{% if labels|length > 0 %}
+    <h4 class="text-center">Tính dữ liệu thiếu</h4>
+    <br/>
+{% endif %}
+<img src="../static/dulieuthieu.PNG" alt="f_null_barchart" width="90%"/>
+<p>==>không có cột dữ liệu nào bị thiếu</p>
+{% endblock %}

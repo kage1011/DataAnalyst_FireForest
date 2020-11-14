@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Analyst</title>
+<link href="../static/css/simplechart.css" rel="stylesheet" />
+<link href="../static/css/bootstrap.css" rel="stylesheet" />
+<script src="../static/js/jquery-2.1.4.js"></script>
+<script src="../static/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+	
+      	<div class="wrapper">
+		<div class="left">
+		<ul>
+			<li><a href="{{ url_for('dinhnghia') }}">1.Định nghĩa dữ liệu</a></li>
+			<li><a href="{{ url_for('dulieuthieu') }}">2.Thống kê dữ liệu thiếu</a></li>
+			<li><a href="{{ url_for('tinhtaptrung') }}">3.Tính tập trung của dữ liệu</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							4.Số vụ cháy rừng trong năm 2007
+					<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="{{ url_for('t1') }}">Bảng Tần số tần suất số vụ cháy rừng trong năm</a></li>
+								<li><a href="{{ url_for('barchart') }}">Biểu đồ tần số số vụ cháy rừng 2007</a></li>
+								<li><a href="{{ url_for('pie') }}">Biểu đồ Tần suất số vụ cháy rừng 2007</a></li>
+								<li><a href="{{ url_for('lineF_area') }}">Tần suất tích lũy số vụ cháy rừng 2007</a></li>
+								
+							</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							5.Thống kê diện tích rừng bị cháy năm 2007
+					<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="{{ url_for('t2') }}"> Bảng Tần số tần suất diện tích rừng bị cháy</a></li>
+								<li><a href="{{ url_for('barchartarea') }}">Biểu đồ tần số diện tích cháy rừng</a></li>
+								<li><a href="{{ url_for('piearea') }}">Biểu đồ tần suất diện tích cháy rừng</a></li>
+								<li><a href="{{ url_for('line') }}">Tương quan Tốc độ lan truyền lữa dự kiến (ISI) và diện tích cháy thực tế</a>	</li>
+								<li><a href="{{ url_for('lineF_area1') }}">Tần suất tích lũy diện tích cháy rừng</a></li>
+								<li><a href="{{ url_for('hist1') }}">Histogram thể hiện phân tán Diện tích cháy rừng</a></li>
+							
+							</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							6.Thống kê lượng mưa năm 2007
+					<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="{{ url_for('t3') }}">Bảng tần số tần suất lượng mưa trong năm 2007</a></li>								
+								<li><a href="{{ url_for('barchartrain') }}">Biểu đồ tần số lượng mưa năm 2007</a></li>								
+								<li><a href="{{ url_for('pierain') }}">Biểu đồ tần suất lượng mưa trong năm 2007</a></li> 
+								<li><a href="{{ url_for('lineF_rain') }}">Biểu đồ tần suất tích lũy lượng mưa trong năm 2007</a></li>
+								<li><a href="{{ url_for('box3') }}">Biểu đồ BoxPlot lượng mưa năm 2007</a></li>
+								<li><a href="{{ url_for('hist3') }}">Histogram thể hiện phân tán lượng mưa trong năm</a></li>
+
+								
+								</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							7.Thống kê tốc độ gió 
+					<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="{{ url_for('t4') }}">Bảng tần số tần suất tốc độ gió trong năm 2007</a></li> 
+								<li><a href="{{ url_for('barchartwind') }}">Biểu đồ tần số tốc độ gió</a></li> 	
+								<li><a href="{{ url_for('line1') }}"> tương quan Tốc độ gió và diện tích cháy thực tế</a></li>							
+								<li><a href="{{ url_for('piewind') }}">Biểu đồ tần suất tốc độ gió</a></li> 
+								<li><a href="{{ url_for('lineF_wind') }}">Biểu đồ tần suất tích lũy tốc độ gió </a></li>								
+                                <li><a href="{{ url_for('hist2') }}">Histogram Tốc độ gió  </a></li>
+								<li><a href="{{ url_for('box2') }}">Biểu đồ BoxPlot tốc độ gió</a></li>
+
+								
+							</ul>
+			</li>
+			
+			<li><a href="{{ url_for('scatter') }}">8. Scatter Chart</a></li>
+			
+			<li><a href="{{ url_for('areac') }}">9.Area Chart</a></li>
+			
+			
+		</ul>
+		</div>
+		<div class="right">
+			<div class="top">
+			<h1>ANALYZING   FORESTFIRES  DATA</h1>
+			<li><a href="{{ url_for('index') }}">HOME PAGE</a></li>
+			</div>
+			<p>
+
+				<div class="tam">
+					{% block content %}
+					{% endblock %}
+				  </div>	
+			</p>
+		</div>
+		</div>
+    
+
+</body>
+</html>

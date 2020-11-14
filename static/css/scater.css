@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+.wrapper{
+	margin:0 auto;
+	width:1100px;
+	height:850px;
+	border:1px solid black;
+}
+.left{
+	margin-top:200px;
+	width:250px;
+	height:650px;
+	float:left;
+	border-right:1px solid black;
+	border-top:1px solid black;
+}
+.right{
+	width:835px;
+	height:850px;
+	float:left;
+	text-align: center;
+}
+.left ul li {
+	list-style-type: none;
+	margin-top:15px;
+}
+.bieudo{
+	margin-left: 270px;
+	margin-top:20px;
+	width:350px;
+	height:300px;
+	border:1px solid black;
+}
+h1{
+	margin-left:310px;
+	width:200px;
+	height:40px;
+	background-color: skyblue;
+}

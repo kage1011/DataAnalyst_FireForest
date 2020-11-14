@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+	{% extends "analyst.html" %}
+	{% block content %}
+	<h1>Histogram</h1>
+	<p>Mô tả:Một minh hoạ bằng đồ thị của phân phối theo tần xuất , trong đó tần suất là một biến lấy giá trị giữa các giới hạn được tính bằng chiều cao của một cột trên trục hoành giữa các giới hạn đó. </p>
+	<p>Dùng khi :
+		
+		Ước lượng phân phối xác suất của một biến liên tục .
+Cần tổ chức lượng lớn dữ liệu và tạo ra hình ảnh trực quan nhanh chóng.
+       </p>
+	   <div class="scatter">
+		{{ chart|safe }}
+	   </div>
+	{% endblock %}
+  </body>
+</html>

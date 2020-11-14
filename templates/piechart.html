@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+	{% extends "analyst.html" %}
+	{% block content %}
+	<h1>Biểu đồ Tròn</h1>
+	<p>Mô tả:là một hình ảnh thống kê tròn được chia thành lát để minh họa tỷ lệ số </p>
+	<p>Dùng khi :
+		
+		Hiển thị dữ liệu tỷ lệ phần trăm hoặc tỷ lệ.
+        Hiển thị dữ liệu được phân loại thành danh mục danh nghĩa hoặc thứ tự.
+       </p>
+	   <div class="scatter">
+		{{ chart|safe }}
+	   </div>
+	{% endblock %}
+  </body>
+</html>
